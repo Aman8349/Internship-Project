@@ -1,0 +1,344 @@
+body {
+  width: 100%;
+  margin: 0px;
+  color: blue;
+  font-family: "Oswald", sans-serif !important;
+}
+nav > ul > li {
+  list-style-type: none;
+  float: left;
+}
+
+#search,
+#home {
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 0.05rem solid #009ffd;
+  border-color: #009ffd;
+  color: #ffa400;
+}
+
+#cart {
+  border-radius: 0.5rem;
+  background: orange;
+  border: 0.05rem solid #009ffd;
+  border-color: #009ffd;
+  color: #ffffff;
+  margin-left: 0rem;
+  margin-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#buy {
+  border-radius: 0.5rem;
+  background: orangered;
+  border: 0.05rem solid #009ffd;
+  border-color: #009ffd;
+  color: #ffffff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+#d-img {
+  background: transparent;
+
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#d-img:hover {
+  border: 0.04rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(0.6);
+  background: transparent;
+}
+#cart:hover,
+#buy:hover {
+  background: blue;
+  color: #ffa400;
+}
+
+#search:hover,
+#login:hover,
+#home:hover {
+  background: #ffa400;
+  color: blue;
+}
+
+#home {
+  width: 6rem auto;
+  height: 4rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.nav {
+  padding-top: 1rem;
+  width: 100% auto;
+
+  background-color: #1b262c !important;
+}
+
+.nav a {
+  float: center;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#nav div {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#login {
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 0.05rem solid #009ffd;
+  border-color: #009ffd;
+  color: #ffa400;
+}
+
+#subNav {
+  width: 100% !important;
+  background-color: aqua;
+}
+
+.subnav {
+  padding-top: 1rem;
+  width: 100% auto !important;
+  background-color: aqua;
+}
+
+.subnav #Box .container .row div a {
+  text-decoration: none;
+  color: blue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 15rem;
+  position: relative;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+/* Caption text */
+.text {
+  color: blue;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  bottom: 0.3rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: blue;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #1b262c;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#deal p {
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+#offer {
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+#deals-row #deals-img div img {
+  width: 22rem;
+  height: auto;
+  border: black;
+  border-style: solid;
+  margin-left: 2rem;
+  margin-bottom: 0.2rem;
+  padding: 2rem;
+}
+
+#deals-row #deals-img div {
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+#deal {
+  border: black;
+  border-style: solid;
+  margin-top: 0.5rem;
+  background-color: cyan;
+  padding-bottom: 1.5rem;
+}
+
+.footer #foot-box #foot-row .row div ul li {
+  margin: 0;
+  padding-bottom: 0.2;
+  list-style-type: none;
+  text-align: center !important;
+}
+
+.footer {
+  padding-top: 1rem;
+}
+
+#footer-1 {
+  width: 100%;
+  background-color: #1b262c !important;
+}
+
+#deals-row #deals-img div a img {
+  background: transparent;
+  border: none;
+  color: #ffa400;
+  position: relative;
+  overflow: hidden;
+}
+
+#deals-row #deals-img div a img:hover {
+  border: 0.04rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
+  background-color: #1b262c;
+  border-color: #009ffd;
+}
+
+#p-1,
+#p-2,
+#p-3,
+#p-4,
+#p-5,
+#p-6 {
+  width: 6rem;
+  padding-bottom: 1rem;
+  height: auto;
+}
+
+#p-1:hover,
+#p-2:hover,
+#p-3:hover,
+#p-4:hover,
+#p-5:hover,
+#p-6:hover {
+  transform: scale(1.2);
+}
+
+#p-mobile #p-mr div img {
+  width: 15rem;
+}
+#product-row {
+  text-align: center !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem;
+}
+
+#p-mobile #p-mr div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+#p-mobile #p-mr div img:hover {
+  background-color: #1b262c;
+  transform: scale(0.9);
+  border: 0.04rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+#p-mobile #p-mr div h6 {
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .nav a {
+    float: none;
+    display: block;
+  }
+
+  table {
+    vertical-align: middle;
+  }
+  td {
+    vertical-align: relative;
+  }
+}

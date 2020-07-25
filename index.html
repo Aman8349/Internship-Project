@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/592d38b1bf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>home Page</title>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="container-fluid text-center px-0" id="Box">
+        <div class="container">
+          <div class="row" id="nav">
+            <div class="col-12 mx-auto col-lg-3 col-sm-1">
+      <a href="index.html">
+        <img src="logo.svg" />
+      </a>
+            </div>
+      
+            <div class="col-12 mx-auto col-lg-3 col-sm-1">
+          <a href="dummy.html">
+            <input type="text" placeholder="Search.." />
+            <button type="submit" id="search">
+              <i class="fa fa-search"></i></button
+          ></a>
+            </div>
+
+            <div class="col-12 mx-auto col-lg-3 col-sm-1">
+      <a href="dummy.html"> <button type="submit" id="login">LOGIN</button></a>
+    </div>
+    </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subnav">
+      <div class="container-fluid text-center px-0" id="Box">
+        <div class="container">
+          <div class="row" id="subNav">
+            <div class="col-12 mx-auto col-lg-2 col-sm-1">
+              <a href="./products.html">
+                <p>Mobiles</p>
+              </a>
+            </div>
+
+            <div class="col-12 mx-auto col-lg-2 col-sm-1">
+              <a href="dummy.html">
+                <p>Tv & Appliances</p>
+              </a>
+            </div>
+
+            <div class="col-12 mx-auto col-lg-2 col-sm-1">
+              <a href="dummy.html">
+                <p>Men</p>
+              </a>
+            </div>
+
+            <div class="col-12 mx-auto col-lg-2 col-sm-1">
+              <a href="dummy.html">
+                <p>Women</p>
+              </a>
+            </div>
+
+            <div class="col-12 mx-auto col-lg-2 col-sm-1">
+              <a href="dummy.html">
+                <p>Baby & Kids</p>
+              </a>
+            </div>
+
+            <div class="col-12 mx-auto col-lg-2 col-sm-1">
+              <a href="dummy.html">
+                <p>Home & Furnitures</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- carausel -->
+    <div>
+      <h5 id="offer">Special Offers !</h5>
+    </div>
+    
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <a href="./dummy.html">
+          <img src="./img/product-1.png" style="width: 100%;" />
+        </a>
+        <div class="text">
+          <h5>20% off on all Google Phones</h5>
+          Price : $ 10
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <a href="./dummy.html">
+          <img src="./img/product-2.png" style="width: 100%;" />
+        </a>
+        <div class="text ">
+          <h5>26% off on all Samsung Phones</h5>
+          Price : $ 15
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <a href="./dummy.html">
+          <img src="./img/product-4.png" style="width: 100%;" />
+        </a>
+        <div class="text">
+          <h5>30% off on all HTC Phones</h5>
+          Price : $ 12
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <a href="./dummy.html">
+          <img src="./img/product-6.png" style="width: 100%;"
+        /></a>
+        <div class="text">
+          <h5>40% off on all I-Phones</h5>
+          Price : $ 100
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center;">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+    <!-- end of slideshow-->
+    <div id="deal">
+      <p>
+        Deals Of The Day
+        <span><i class="fa fa-fire"></i></span>
+      </h2>
+    </p>
+
+    <!--Deals container-->
+
+    <div class="container" id="deals-row">
+      <div class="row" id="deals-img">
+        <div class="col-12 mx-auto col-lg-4 col-sm-2" id="img-1">
+          <a href="./dummy.html"><img src="./img/product-5.png" /> </a>
+        </div>
+
+        <div class="col-12 mx-auto col-lg-4 col-sm-2" id="img-2" >
+          <a href="./dummy.html"><img src="./img/product-6.png"  /> </a>
+        </div>
+
+        <div class="col-12 mx-auto col-lg-4 col-sm-2" id="img-3">
+          <a href="./dummy.html"><img src="./img/product-2.png"  /></a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- footer section-->
+    
+<div class="footer" id="footer-1">
+  <div class="container-fluid text-center px-0" id="foot-box" >
+    <div class="container" id="foot-row">
+      <div class="row" id="footers">
+        <div class="col-12 mx-auto col-lg-2 col-sm-1">
+          
+          <ul>
+            <li><h5>About
+            </h5></li>
+            <li><a href="./dummy.html">Contact us</a></li>
+            <li><a href="./dummy.html"><li>About us</a></li>
+            <li><a href="./dummy.html"><li>Careers</a></li>
+            <li><a href="./dummy.html"><li>Press</a></li>
+          </ul>
+        </div>
+        <div class="col-12 mx-auto col-lg-2 col-sm-1">
+          
+          <ul>
+            <li><h5>HELP
+            </h5></li>
+            <li><a href="./dummy.html">Payments</a></li>
+            <li><a href="./dummy.html">Shipping</a></li>
+            <li><a href="./dummy.html">Cancellation & Returns</a></li>
+            <li><a href="./dummy.html">Report an issue</a></li>
+          </ul>
+        </div>
+        <div class="col-12 mx-auto col-lg-2 col-sm-1">
+          
+          <ul>
+            <li><h5>POLICY
+            </h5></li>
+            <li><a href="./dummy.html">Return Policy</a></li>
+            <li><a href="./dummy.html">Time of Use</a></li>
+            <li><a href="./dummy.html">Careers</a></li>
+            <li><a href="./dummy.html">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 mx-auto col-lg-2 col-sm-1">
+          
+          <ul>
+            <li><h5>Mail us:
+            </h5></li>
+            <li>abc@xyz.com</li>
+            <li>6/23 abc com</li>
+            <li>def road</li>
+            <li>xyz</li>
+          </ul>
+        </div>
+
+        <div class="col-12 mx-auto col-lg-2 col-sm-1">
+          
+          <ul>
+            <li><h5>Regd. Office
+            </h5></li>
+            
+            <li>R Address</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
